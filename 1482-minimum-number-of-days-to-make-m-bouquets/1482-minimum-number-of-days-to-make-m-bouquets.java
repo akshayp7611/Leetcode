@@ -22,6 +22,7 @@ class Solution {
         int low =Integer.MAX_VALUE;
         int high=Integer.MIN_VALUE;
         int res=-1;
+        if ((long)m * k > n) return -1;
 
         for(int i=0;i<n;i++){
             if(bloomDay[i]<low){
